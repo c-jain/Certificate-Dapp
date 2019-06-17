@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { Button, Form } from 'rimble-ui';
 
+//import styles from './Dashboard.module.scss';
+
 export default class Dashboard extends Component {
 	render() {
-		const { handleSubmit } = this.props;
+		const { handleSubmit} = this.props;
 		return (
 			<div>
 				<Form onSubmit={handleSubmit}>
@@ -36,14 +38,6 @@ export default class Dashboard extends Component {
 			          <Form.Input
 			            type="date"
 			            name="date"
-			            required
-			            width={1}
-			          />
-			        </Form.Field>
-			        <Form.Field label="Score" width={1}>
-			          <Form.Input
-			            type="number"
-			            name="score"
 			            required
 			            width={1}
 			          />
